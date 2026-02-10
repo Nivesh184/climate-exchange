@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Exchange | Future Vision</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">CLIMATE EXCHANGE</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">The Exchange</a></li>
+                <li><a href="#">Solutions Lab</a></li>
+                <li><a href="#" class="btn-cta">Contribute</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Engineering a Sustainable Tomorrow.</h1>
+        <p>A marketplace of ideas and data for the future of our planet.</p>
+        <button class="btn-main">Explore the Forecast</button>
+    </section>
+
+    <section class="featured-blogs">
+        <h2>Latest from The Exchange</h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <h3>The 2050 Energy Grid</h3>
+                <p>How AI is optimizing renewable energy distribution...</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h3>Urban Blueprints</h3>
+                <p>Designing cities that breathe and withstand rising seas...</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Climate Exchange Initiative. Together for the future.</p>
+    </footer>
+
+</body>
+</html>
