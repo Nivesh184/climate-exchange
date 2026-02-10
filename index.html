@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Exchange | Future Vision</title>
+    <title>Climate Exchange | India Future Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,39 +12,45 @@
         <div class="logo">CLIMATE EXCHANGE</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">The Exchange</a></li>
-                <li><a href="#">Solutions Lab</a></li>
-                <li><a href="#" class="btn-cta">Contribute</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="submit.html" class="btn-cta">Submit a Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Engineering a Sustainable Tomorrow.</h1>
-        <p>A marketplace of ideas and data for the future of our planet.</p>
-        <button class="btn-main">Explore the Forecast</button>
-    </section>
-
-    <section class="featured-blogs">
-        <h2>Latest from The Exchange</h2>
-        <div class="blog-grid">
-            <div class="blog-card">
-                <h3>The 2050 Energy Grid</h3>
-                <p>How AI is optimizing renewable energy distribution...</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class="blog-card">
-                <h3>Urban Blueprints</h3>
-                <p>Designing cities that breathe and withstand rising seas...</p>
-                <a href="#">Read More</a>
-            </div>
+        <h1>India's Climate Future</h1>
+        <p>Use the slider to see our projected journey to 2100.</p>
+        
+        <div class="forecast-container">
+            <label for="yearSlider">Target Year: <span id="yearVal">2026</span></label>
+            <input type="range" min="2026" max="2100" value="2026" class="slider" id="yearSlider">
+            <p id="forecastText">2026: Strengthening National Clean Air Programme (NCAP) targets.</p>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Climate Exchange Initiative. Together for the future.</p>
-    </footer>
+    <section class="pollution-section">
+        <h2 style="color: #64ffda; text-align: center;">Live Air Quality Index (AQI)</h2>
+        <div id="map-area" class="map-container">
+            <p style="text-align:center; padding: 50px;">Map Loading...</p>
+        </div>
+    </section>
 
+    <script>
+        const slider = document.getElementById("yearSlider");
+        const output = document.getElementById("yearVal");
+        const text = document.getElementById("forecastText");
+
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+            if (this.value < 2040) {
+                text.innerHTML = this.value + ": Expanding EV infrastructure in Tier-1 cities.";
+            } else if (this.value >= 2040 && this.value < 2070) {
+                text.innerHTML = this.value + ": Net Zero transition; 500GW renewable capacity reached.";
+            } else {
+                text.innerHTML = this.value + ": Climate stability achieved; urban forests cooling cities.";
+            }
+        }
+    </script>
 </body>
 </html>
